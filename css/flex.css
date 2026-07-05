@@ -1,0 +1,543 @@
+/* Global Tags */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8fff9;
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 56px;
+  color: #102e1d;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Global Style Classes */
+.container {
+  width: 80%;
+  max-width: 100%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.heading h2 {
+  color: #102e1d;
+}
+
+.heading p {
+  font-size: 20px;
+  line-height: 1.75;
+  color: #6c8d7a;
+}
+
+.btn {
+  display: block;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.accent {
+  background-color: #184;
+  color: #f8fff9;
+  border: 2px solid rgba(17, 136, 69, 0.3);
+}
+
+.light {
+  background-color: #f8fff9;
+  color: #151515;
+  border: 2px solid #d1d5dc;
+}
+
+.image img {
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.card {
+  text-align: center;
+  width: 300px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card p {
+  color: #666;
+}
+
+.first-card {
+  background-color: rgba(21, 198, 252, 0.1);
+  border-color: rgba(21, 198, 252, 0.3);
+}
+
+.second-card {
+  background-color: rgba(153, 143, 0, 0.1);
+  border-color: rgba(153, 143, 0, 0.3);
+}
+
+.third-card {
+  background-color: rgba(9, 186, 9, 0.1);
+  border-color: rgba(9, 186, 9, 0.3);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-width: 15px;
+  border-style: solid;
+  border-radius: 25%;
+}
+/* Global Utility Classes */
+
+.clear {
+  display: none;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.top-section,
+.bottom-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Hero Section Start */
+.hero {
+  height: 100vh;
+}
+
+.hero .container {
+  flex-direction: row;
+}
+
+/* Text (Left) */
+.hero .heading {
+  width: 500px;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.hero .heading .links {
+  display: flex;
+  gap: 16px;
+}
+
+.hero .heading .links span {
+  padding: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Image (Right) */
+.hero .image {
+  width: 400px;
+}
+/* Hero Section End */
+
+/* Features Section Start */
+/* Top Section (Cards) */
+.features .top-section .card .first-icon {
+  border-color: #14b7e9;
+}
+
+.features .top-section .card .second-icon {
+  border-color: #998f00;
+  border-radius: 50%;
+}
+
+.features .top-section .card .third-icon {
+  border-color: #09ba09;
+}
+
+/* Bottom Section (Features) */
+.features .bottom-section .image {
+  width: 50%;
+}
+
+.features .bottom-section .text {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #102e1d;
+}
+
+.features .bottom-section .text .item {
+  padding: 0 16px;
+  border-left: 4px solid #102e1d;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 20px;
+}
+
+.features .bottom-section .text .item p {
+  color: #6c8d7a;
+}
+/* Features Section End */
+
+/* Reviews Section Start */
+/* Top Section (Quotes) */
+.reviews .top-section .card .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews .top-section .card .title .image img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.reviews .top-section .card blockquote {
+  font-style: italic;
+  color: #666;
+}
+/* Bottom Section (Statistics) */
+.reviews .bottom-section .stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 48px 64px;
+  background-color: rgba(0, 255, 110, 0.1);
+  border: 1px solid rgba(17, 136, 69, 0.3);
+  border-radius: 12px;
+}
+
+.reviews .bottom-section .stats span h3 {
+  font-size: 200%;
+  font-weight: 700;
+  color: #118845;
+}
+
+.reviews .bottom-section .stats span p {
+  color: #6c8d7a;
+}
+/* Reviews Section End */
+
+/* Membership Form Start */
+.membership form {
+  padding: 32px;
+  background-color: rgba(17, 136, 69, 0.1);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, auto);
+  gap: 32px 16px;
+}
+
+.membership form .field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.membership form .field input,
+.membership form .field select,
+.membership form .field textarea {
+  font-family: system-ui, tahoma, sans-serif;
+  border-radius: 12px;
+  padding: 16px 0 16px 12px;
+  border: 2px solid #c7e8d5;
+  font-size: 18px;
+}
+
+.membership form .field label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6c8d7a;
+}
+
+.membership form .field span {
+  color: #f00;
+}
+
+.membership form .field textarea {
+  height: 100px;
+  resize: none;
+}
+
+.membership form p {
+  color: #6c8d7a;
+  text-align: center;
+}
+
+.membership form .btn {
+  padding: 16px;
+}
+
+.membership form * {
+  grid-column: span 2;
+}
+
+.membership form .half-width {
+  grid-column: 1 span;
+}
+/* Membership Form End */
+
+/* Footer Section Start */
+.footer {
+  background-color: #102e1d;
+  color: #99c3ab;
+  padding: 64px 0;
+}
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4 {
+  color: #f8fff9;
+}
+
+.footer .column {
+  flex-grow: 1;
+}
+
+/* Page Info Column */
+.footer .top-section .page-info {
+  width: 50%;
+}
+
+.footer .top-section .page-info .social-links {
+  display: flex;
+  text-align: center;
+  gap: 16px;
+}
+
+.footer .top-section .page-info .social-links .btn {
+  padding: 16px 0;
+  width: 125px;
+  color: #f8fff9;
+  background-color: rgba(255, 255, 255, 0.125);
+}
+
+.footer .top-section .page-info,
+.footer .top-section .quick-links,
+.footer .top-section .contact-info {
+  display: flex;
+  height: 232px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer hr {
+  width: 100%;
+  border: 1px solid #6c8d7a;
+  margin: 0;
+}
+/* Bottom Section */
+.footer .bottom-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .bottom-section .policies {
+  display: flex;
+  gap: 32px;
+}
+/* Footer Section End */
+
+/* Media Queries */
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 52px;
+    color: #102e1d;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .container {
+    width: 100%;
+  }
+  .reviews .top-section .card .title {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .reviews .top-section .card .title .image img {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .section {
+    padding: 32px 16px;
+  }
+  .hero .links,
+  .reviews .top-section,
+  .features .top-section,
+  .membership form,
+  .footer .top-section {
+    flex-direction: column;
+  }
+  .hero .heading {
+    gap: 64px;
+    width: 100%;
+  }
+  .hero .heading .links {
+    width: 100%;
+  }
+  .hero .image,
+  .features .image {
+    display: none;
+  }
+  .card {
+    gap: 16px;
+    height: fit-content;
+  }
+  .top-section .card {
+    width: 100%;
+  }
+  .features .bottom-section .item,
+  .reviews .bottom-section .stats {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    font-size: 14px;
+  }
+  .features .bottom-section .text {
+    width: 100%;
+  }
+  .membership form {
+    display: flex;
+    width: 100%;
+  }
+  .footer .top-section .page-info,
+  .footer .top-section .quick-links,
+  .footer .top-section .contact-info {
+    width: 100%;
+  }
+  .footer .bottom-section {
+    font-size: 12px;
+  }
+  .footer .bottom-section .policies {
+    gap: 12px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    width: 720px;
+  }
+  .hero .container {
+    gap: 16px;
+  }
+  .card {
+    gap: 8px;
+  }
+  .features .card {
+    height: 300px;
+  }
+  .features .image {
+    display: none;
+  }
+  .features .bottom-section .text {
+    width: 100%;
+  }
+  .reviews .card {
+    height: 350px;
+  }
+  .membership form {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 993px) {
+  .container {
+    width: 960px;
+  }
+  .card {
+    gap: 16px;
+  }
+  .features .card {
+    height: 250px;
+  }
+  .features .image {
+    display: block;
+  }
+  /* .features .bottom-section {
+    gap: 16px;
+  } */
+  .features .bottom-section .text {
+    width: 50%;
+    gap: 8px;
+  }
+  .reviews .card {
+    height: 300px;
+  }
+  .membership form {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .container {
+    width: 1140px;
+  }
+}
